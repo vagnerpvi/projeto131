@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/cadastroNota.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <title>Cadastrar Notas</title>
+
+
+</head>
+
+
+<body style="flex:0" background="red">
+
+
+    <form action="/action_page.php">
+
+        <div class="form-inline">
+
+            <div>
+                <label for="button" id="btnLocalizar">Localizar</label>
+                <button type="button" class="btn btn-primary" id="btnLocalizar">Localizar</button>
+            </div>
+
+            <div>
+                <label for="select">Matricula:</label>
+                <input type="text" class="form-control" placeholder="Matriocula" id="matricula">
+            </div>
+            <div>
+                <label for="text">Disciplina :</label>
+                <input type="text" class="form-control" placeholder="Disciplina" id="disciplina">
+            </div>
+            <div>
+                <label for="text">Avaliação :</label>
+                <select name="select" class="form-control" id="avaliacao" onselect="desabilita()">
+                    <option value="valor1">AV1</option>
+                    <option value="valor2" selected>AV2</option>
+                    <option value="valor3">AV3</option>
+                </select>
+            </div>
+
+        </div>
+
+
+        <section>
+            <h3>Av1</h3>
+        </section>
+        <div>
+            <div class="form-group1">
+                <label for="text">Trabalho Acadêmico:</label>
+                <input type="text" class="form-control" placeholder="Enter Trabalho  Acadêmico   " id="av1">
+            </div>
+            <div class="form-group1">
+                <label for="text">APS :</label>
+                <input type="text" class="form-control" placeholder="Enter APS" id="apsAv1">
+            </div>
+        </div>
+        <section>
+            <h3>Av2</h3>
+        </section>
+        <div>
+            <div class="form-group2">
+                <label for="text">Trabalho Acadêmico:</label>
+                <input type="text" class="form-control" placeholder="Enter Trabalho  Acadêmico" id="av2">
+            </div>
+            <div class="form-group2">
+                <label for="text">APS :</label>
+                <input type="text" class="form-control" placeholder="Enter APS" id="apsAv2">
+            </div>
+
+        </div>
+        <section>
+            <h3>Av3</h3>
+        </section>
+        <div>
+            <div class="form-group3">
+                <label for="text">Trabalho Acadêmico:</label>
+                <input type="text" class="form-control" placeholder="Trabalho  Acadêmico" id="av3">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Salvar</button>
+
+        </div>
+
+
+    </form>
+
+    <img src="./img/img-login.jpg" alt="">
+
+    <script type="text/javascript">
+
+        (function desabilita() {
+            var vselect = document.getElementById("avaliacao");
+            var v1 = select.options[select.selectedIndex].value;
+            console.log(value);
+
+            var aps2 = document.getElementById("apsAv2");
+            var av2 = document.getElementById("av2");
+
+            var av3 = document.getElementById("av3");
+
+        }
+        );
+
+
+    </script>
+    <p id="teste">test</p>
+</body>
+
+</html>

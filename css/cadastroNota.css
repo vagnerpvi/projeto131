@@ -1,0 +1,42 @@
+
+form {
+    width: 800px;
+    height: 700px;
+    left: 50%;
+    background-color: unset;
+    margin: -130px 100px 0 -400px;
+    padding: 10px;
+    position: absolute;
+    top: 20%;
+
+}
+
+.form-group1,
+.form-group2,
+.form-group3 {
+    background: transparent;
+    border: 5px solid;
+    border-color: grey;
+   
+}
+
+
+img {
+    width: 1350px;
+    height: 800px;
+
+}
+
+#btnLocalizar {
+    margin-left: 0;
+
+}
+
+#separadorbtn,
+#matricula,
+#disciplina {
+    margin-left: 30px;
+    margin-right: 30px;
+
+
+}
